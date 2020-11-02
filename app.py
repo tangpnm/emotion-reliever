@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify
-import json
 import numpy as np
-import traceback
 from detail_model import test, preprocess, get_prediction
 
 app = Flask(__name__)
@@ -19,7 +17,7 @@ def predict():
             # 1 load message
             content = request.get_json()
             msg = content['sentance']
-            print(msg)
+            # print(msg)
 
             # 2 proprocess the data
             prep = preprocess(msg)
