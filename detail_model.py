@@ -14,11 +14,6 @@ tokenizer = Tokenizer()
 max_seq_len = 500
 class_names = ['joy', 'fear', 'anger', 'sadness', 'neutral']
 
-def test():
-    # testModel = loaded_model.get_classes()
-
-    return "testModel"
-
 def preprocess(message):
 
     seq = tokenizer.texts_to_sequences(message)
