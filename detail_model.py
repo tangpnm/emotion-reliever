@@ -4,7 +4,7 @@ from keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
 #load model
-path_model = './model/LSTM_w2v.h5'
+path_model = './model/model_ver2.h5'
 
 # Loading the model and assign it to the predictor
 loaded_model = load_model(path_model)
